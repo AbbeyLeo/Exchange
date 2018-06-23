@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exchange.activity" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- test页面 -->
+        <activity android:name=".test" >
+            <intent-filter>
+               <!-- <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <!-- 商品详情页面 -->
+        <activity android:name=".CommodityDetailActivity" >
+            <intent-filter>
+               <!--  <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <!-- 发表页面 -->
+        <activity android:name=".ReleaseActivity" >
+            <intent-filter>
+
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+            </intent-filter>
+        </activity>
+        <!-- 导航栏页面 -->
+        <activity android:name=".NavigationBarActivity" >
+            <intent-filter>
+
+                
+                <!-- <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+              
+            </intent-filter>
+        </activity>
+        <!-- 商品列表页面 -->
+        <activity android:name=".CommodityListActivity" >
+            <intent-filter>
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+            </intent-filter>
+        </activity>
+        <!-- 分类页面 -->
+        <activity android:name=".ClassifyFragment" >
+            <intent-filter>
+
+                <!-- 
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <!-- 登录页面 -->
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+
+               <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 注册页面 -->
+        <activity android:name=".RegisterActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 用户修改信息页面 -->
+        <activity android:name=".SettingUserInfoActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+            -->
+        </activity>
+        
+    </application>
+
+</manifest>

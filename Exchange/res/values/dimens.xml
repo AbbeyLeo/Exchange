@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigationTextMarginTop">-3dip</dimen>
+    <dimen name="navigationWidth">62dip</dimen>
+    <dimen name="navigationHeight">50dip</dimen>
+    <dimen name="navigationImageWidthAndHeight">30dip</dimen>
+    <dimen name="messageBarheight">60dip</dimen>
+    <dimen name="messageImageWidthAndHeight">40dip</dimen>
+    <dimen name="messageIconWidthAndHeight">30dip</dimen>
+    <dimen name="messageTextSize">12dip</dimen>
+    <dimen name="title_height">40dip</dimen>
+</resources>

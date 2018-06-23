@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip" >
+
+        <ImageView
+            android:id="@+id/btnReleaseBack"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:alpha="0.5"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="发布商品"
+            android:textColor="@color/Black"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" 
+        android:paddingBottom="10dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/btnSelectPicture"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/tab_round_imageview"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/navigationImageWidthAndHeight"
+                    android:layout_height="@dimen/navigationImageWidthAndHeight"
+                    android:src="@drawable/release" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="添加图片"
+                android:textColor="@color/HintColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/RegisterBackground" />
+
+            <EditText
+                android:id="@+id/etCName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:hint="请输入宝贝的标题"
+                android:singleLine="true"
+                android:textColor="@color/HintColor"
+                android:textColorHint="@color/HintColor"
+                android:textSize="16dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="12dip"
+                android:background="@color/RegisterBackground" />
+
+            <EditText
+                android:id="@+id/etCDetail"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dip"
+                android:gravity="top"
+                android:hint="请详细描述一下(100词内)"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:singleLine="false"
+                android:textColor="@color/HintColor"
+                android:textColorHint="@color/HintColor"
+                android:textSize="13dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btnPinkage"
+                    android:layout_width="70dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/tab_release_textview"
+                    android:gravity="center"
+                    android:text="包邮"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/btnNewDegree"
+                    android:layout_width="70dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/tab_release_textview"
+                    android:gravity="center"
+                    android:text="全新"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/RegisterBackground" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" 
+                android:clickable="true"
+                android:onClick="showPriceSelect"
+                android:background="@drawable/white_to_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="价格"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/selectPrice"
+                    android:alpha="0.5"
+                    android:text="请输入出售价格"
+                    android:textColor="@color/Black"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/selectPrice"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:alpha="0.5"
+                    android:src="@drawable/front" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="12dip"
+                android:background="@color/RegisterBackground" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" 
+                android:clickable="true"
+                android:background="@drawable/white_to_gray"
+                android:onClick="showCategorySelect">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="分类"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/selectCategory"
+                    android:alpha="0.5"
+                    android:text="请选择商品类型"
+                    android:textColor="@color/Black"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/selectCategory"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:alpha="0.5"
+                    android:src="@drawable/front" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="12dip"
+                android:background="@color/RegisterBackground" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" 
+                android:clickable="true"
+                android:background="@drawable/white_to_gray"
+                android:onClick="showKindSelect">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="种类"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tvKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/selectCategory"
+                    android:alpha="0.5"
+                    android:text="请选择商品种类"
+                    android:textColor="@color/Black"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/selectCategory"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:alpha="0.5"
+                    android:src="@drawable/front" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="12dip"
+                android:background="@color/RegisterBackground" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" 
+                android:clickable="true"
+                android:background="@drawable/white_to_gray"
+                android:onClick="showExchangeCategorySelect">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="交换商品分类"
+                    android:textColor="@color/Black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tvExchangeCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/selectExchangeCategory"
+                    android:alpha="0.5"
+                    android:text="电子产品"
+                    android:textColor="@color/Black"
+                    android:textSize="13dip" />
+
+                <ImageView
+                    android:id="@+id/selectExchangeCategory"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:alpha="0.5"
+                    android:src="@drawable/front" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/tab_bt"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/White"
+        android:textSize="18dip" 
+         android:onClick="releaseCommodity"/>
+
+</LinearLayout>

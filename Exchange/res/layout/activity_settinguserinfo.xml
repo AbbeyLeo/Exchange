@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center"
+        android:text="修改用户信息"
+        android:textColor="@color/White"
+        android:textSize="20dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textColor="@color/White"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/et_userNick"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="性别"
+            android:textColor="@color/White"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/et_userSex"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="收货或出货地址"
+            android:textColor="@color/White"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/et_userAddress"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="邮箱"
+            android:textColor="@color/White"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/et_userEmail"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/BtColor"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="手机号码"
+            android:textColor="@color/White"
+            android:textSize="12dip" />
+
+        <EditText
+            android:id="@+id/et_userTel"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:textColor="@color/Black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_updateUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/BtColor"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/White"
+        android:textSize="12dip" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorHint">@color/BtColor</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="Text_Hint_Style" >
+        <item name="android:textColorHint">@color/BtColor</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NoTitleDialog" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowNoTitle">true</item>//无标题  
+    </style>  
+</resources>

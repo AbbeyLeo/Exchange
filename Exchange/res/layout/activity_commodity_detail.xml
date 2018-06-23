@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/RegisterBackground" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/RegisterBackground"
+                android:orientation="vertical" >
+                
+                <android.support.v4.view.ViewPager
+                android:id="@+id/releaseViewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="280dip"
+                android:background="@color/HintColor"
+                android:scaleType="centerInside"
+                android:layout_gravity="center" />
+                
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dip"
+                    android:background="@color/White" >
+
+                    <TextView
+                        android:id="@+id/commodityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="15dip"
+                        android:text="不规则微喇牛仔裤女"
+                        android:textColor="@color/Black"
+                        android:textSize="15dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/commodityPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/commodityTitle"
+                        android:layout_below="@id/commodityTitle"
+                        android:layout_marginTop="10dip"
+                        android:text="￥100"
+                        android:textColor="@color/Red"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/oldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/commodityPrice"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@id/commodityPrice"
+                        android:text="原价￥199"
+                        android:textColor="@color/HintColor"
+                        android:textSize="13dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/White"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center_vertical"
+                        android:text="宝贝描述"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/HintColor"
+                        android:textSize="13dip" />
+
+                    <TextView
+                        android:id="@+id/commodity_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:paddingBottom="10dip"
+                        android:lineSpacingExtra="10dip"
+                        android:text="饿了想吃饭没别的balabala...饿了balabala...饿了想吃饭没别的balabala...饿了balabala...饿了想吃饭没别的balabala...饿了balabala..."
+                        android:textColor="@color/Black"
+                        android:textSize="13dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/White"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dip"
+                        android:text="预期交换商品"
+                        android:textColor="@color/HintColor"
+                        android:textSize="13dip" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:paddingBottom="10dip"
+                        android:lineSpacingExtra="10dip"
+                        android:text="饿了想吃饭没别的balabala...饿了balabala...饿了想吃饭没别的balabala...饿了balabala...饿了想吃饭没别的balabala...饿了balabala..."
+                        android:textColor="@color/Black"
+                        android:textSize="13dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/backDetail"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:alpha="0.3"
+                android:background="@drawable/rounded_imageview_black"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:src="@drawable/back_white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/White"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/RegisterBackground" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <LinearLayout 
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/bargain"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="侃价"
+                        android:textSize="10dip"
+                        android:textColor="@color/Black"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/leavewords"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="留言"
+                        android:textSize="10dip"
+                        android:textColor="@color/Black"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/collect"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收藏"
+                        android:textSize="10dip"
+                        android:textColor="@color/Black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#6ecff5"
+            android:gravity="center"
+            android:text="我想买"
+            android:textColor="@color/White"
+            android:textSize="15dip" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#247d9f"
+            android:gravity="center"
+            android:text="马上买"
+            android:textColor="@color/White"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</LinearLayout>

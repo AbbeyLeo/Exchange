@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/RegisterBackground"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+        <EditText
+            android:id="@+id/searcheditView"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_editview"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字"
+            android:imeOptions="actionUnspecified"
+            android:paddingLeft="32dip"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/HintColor"
+            android:singleLine="true"
+            android:textSize="11dip" />
+        <ImageView 
+            android:id="@+id/searchImage"
+            android:layout_height="15dip"
+            android:layout_width="15dip"
+            android:layout_alignLeft="@id/phoneEditView"
+             android:layout_marginLeft="13dip"
+            android:src="@drawable/search"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout 
+        android:id="@+id/title_adverstment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <fragment
+		    android:id="@+id/advertisement_fragement"
+		    android:layout_width="match_parent"
+		    android:layout_height="120dip"
+		    android:name="com.exchange.activity.AdvertisementFragment"
+		     />
+    </FrameLayout>
+     <FrameLayout
+	    android:id="@+id/listviewl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <include layout="@layout/school_in_out_item"/>
+   
+		    <android.support.v4.view.ViewPager  
+		        android:id="@+id/school_area_vp"  
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		    /> 
+    </FrameLayout>
+
+</LinearLayout>

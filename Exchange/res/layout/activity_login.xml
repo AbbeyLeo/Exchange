@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RegisterBackground"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.activity.abbey.exchange.RegisterActivity">
+
+    <TextView
+        android:id="@+id/TitleView"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="30dip" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+     <!--    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text_Hint_Style"> -->
+
+             <EditText
+                android:id="@+id/phoneEditView"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/EditTextColor"
+                android:hint="请输入手机号"
+                android:imeOptions="actionUnspecified"
+                android:inputType="phone"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/HintColor"
+                android:textSize="10dip" 
+                android:paddingLeft="10dip"/>
+      <!--   </android.support.design.widget.TextInputLayout> -->
+
+
+  <!--       <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text_Hint_Style"> -->
+
+             <EditText
+                android:id="@+id/passwordEditView"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/EditTextColor"
+                android:ellipsize="end"
+                android:hint="请填写您的密码"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/HintColor"
+                android:textSize="10dip"
+                android:visibility="visible"
+                android:paddingLeft="10dip" />
+        <!-- </android.support.design.widget.TextInputLayout> -->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <Button
+            android:id="@+id/login_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1.66"
+            android:background="@drawable/tab_bt"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="14dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+      	android:id="@+id/forget_password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:text="@string/forget_password_string"
+        android:textColor="@color/BtColor"
+        android:textSize="10dip" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight="1">
+    <TextView
+         android:id="@+id/change_to_register_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_no_account_string"
+        android:textColor="@color/BtColor"
+        android:textSize="12dip"
+        />
+    </LinearLayout>
+
+</LinearLayout>

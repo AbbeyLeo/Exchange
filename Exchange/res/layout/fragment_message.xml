@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/White">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="bottom"
+        android:background="@color/BtColor"
+        android:gravity="center"
+        android:text="消息"
+        android:textColor="@color/White"
+        android:textSize="18dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/messageBarheight"
+                android:background="@color/White" 
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="@dimen/messageImageWidthAndHeight"
+                    android:layout_height="@dimen/messageImageWidthAndHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/rounded_imageview_chat"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/chat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/iconChat"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="聊天"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/messageTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="您还没收到聊天提醒"
+                        android:textColor="@color/HintColor"
+                        android:textSize="@dimen/messageTextSize" 
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/messageBarheight"
+                android:background="@color/White" 
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="@dimen/messageImageWidthAndHeight"
+                    android:layout_height="@dimen/messageImageWidthAndHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/rounded_imageview_comment"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/messageIconWidthAndHeight"
+                        android:layout_height="@dimen/messageIconWidthAndHeight"
+                        android:src="@drawable/comment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/iconChat"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="留言"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/messageTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="您还没收到新的留言"
+                        android:textColor="@color/HintColor"
+                        android:textSize="@dimen/messageTextSize" 
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/messageBarheight"
+                android:background="@color/White" 
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="@dimen/messageImageWidthAndHeight"
+                    android:layout_height="@dimen/messageImageWidthAndHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/rounded_imageview_collect_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/messageIconWidthAndHeight"
+                        android:layout_height="@dimen/messageIconWidthAndHeight"
+                        android:src="@drawable/collect_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/iconChat"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收藏提醒"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/messageTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="您还没收到新的收藏提醒"
+                        android:textColor="@color/HintColor"
+                        android:textSize="@dimen/messageTextSize" 
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/messageBarheight"
+                android:background="@color/White" 
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="@dimen/messageImageWidthAndHeight"
+                    android:layout_height="@dimen/messageImageWidthAndHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/rounded_imageview_remind"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/messageIconWidthAndHeight"
+                        android:layout_height="@dimen/messageIconWidthAndHeight"
+                        android:src="@drawable/remind" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/iconChat"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易提醒"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/messageTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="您还没收到交易提醒"
+                        android:textColor="@color/HintColor"
+                        android:textSize="@dimen/messageTextSize" 
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@color/RegisterBackground" />
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/messageBarheight"
+                android:background="@color/White" 
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="@dimen/messageImageWidthAndHeight"
+                    android:layout_height="@dimen/messageImageWidthAndHeight"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/rounded_imageview_notice"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/messageIconWidthAndHeight"
+                        android:layout_height="@dimen/messageIconWidthAndHeight"
+                        android:src="@drawable/notice" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/iconChat"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/messageTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="亲爱的，欢迎您成为balabala..."
+                        android:singleLine="true"
+                        android:textColor="@color/HintColor"
+                        android:textSize="@dimen/messageTextSize" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@color/RegisterBackground" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
